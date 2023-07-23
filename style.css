@@ -58,7 +58,7 @@ a {
     transition: all 250ms;
 }
 
-.dropdown:hover>.dropdown-button {
+.dropdown:is(:hover, :focus)>.dropdown-button {
     background: black;
     cursor: pointer;
     color: white;
@@ -66,7 +66,7 @@ a {
     transition: all 250ms;
 }
 
-.dropdown:hover>.dropdown-wrapper {
+.dropdown:is(:hover, :focus)>.dropdown-wrapper {
     visibility: visible;
     opacity: 1;
     transition: opacity 500ms;
